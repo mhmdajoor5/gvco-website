@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="mepcoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1E4D8C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7DD1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- MEPCO stylized logo - Blue brand color -->
+  <text x="100" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#mepcoGrad)" text-anchor="middle" letter-spacing="4">MEPCO</text>
+  <rect x="35" y="48" width="130" height="2.5" fill="url(#mepcoGrad)" opacity="0.5"/>
+</svg>

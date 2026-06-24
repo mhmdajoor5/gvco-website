@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="indomieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E31837;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7941D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD100;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Indomie stylized logo - Red/Orange/Yellow gradient -->
+  <text x="100" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" font-style="italic" fill="url(#indomieGrad)" text-anchor="middle" letter-spacing="2">Indomie</text>
+  <path d="M35 46 Q100 52, 165 46" stroke="url(#indomieGrad)" stroke-width="2" fill="none" opacity="0.7"/>
+</svg>

@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Vision Company | GVCO - Industrial Manufacturing Excellence</title>
+    <meta name="description" content="Golden Vision Company (GVCO) - Leading industrial manufacturing and engineering services in Saudi Arabia. CNC, Sheet Metal, Laser Cutting, and more.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="asset/GVCO-logo-.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gvco': {
+                            'navy': '#050B15',
+                            'navy-light': '#0D1B2A',
+                            'navy-mid': '#1B2838',
+                            'blue': '#1E4D8C',
+                            'blue-light': '#2E7DD1',
+                            'blue-bright': '#4DA3FF',
+                            'steel': '#4A5568',
+                            'steel-light': '#718096',
+                            'silver': '#C4D0DC',
+                            'chrome': '#E8ECF0',
+                            'gold': '#D4AF37',
+                            'gold-light': '#E8C547',
+                            'gold-dark': '#B8962E',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'arabic': ['Tajawal', 'Cairo', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gvco-navy text-white font-arabic antialiased">
+
+    <!-- Premium Loading Screen -->
+    <div class="loading">
+        <img src="asset/GVCO-logo-.png" alt="GVCO" class="h-16 mb-6 opacity-80">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation - Premium Corporate -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-[1500px] mx-auto px-8 lg:px-12">
+            <div class="flex items-center justify-between h-[80px]">
+                <!-- Logo -->
+                <a href="#" class="flex items-center group flex-shrink-0">
+                    <img src="asset/GVCO-logo-.png" alt="GVCO Logo" class="h-10 lg:h-11 w-auto transition-opacity duration-300 group-hover:opacity-90">
+                </a>
+
+                <!-- Desktop Navigation - Better Spacing -->
+                <div class="hidden lg:flex items-center gap-12 rtl:flex-row-reverse">
+                    <a href="#home" class="nav-link-clean" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                    <a href="#about" class="nav-link-clean" data-en="About" data-ar="عن الشركة">عن الشركة</a>
+                    <a href="#leadership" class="nav-link-clean" data-en="Leadership" data-ar="القيادة">القيادة</a>
+                    <a href="#services" class="nav-link-clean" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+                    <a href="#industries" class="nav-link-clean" data-en="Industries" data-ar="القطاعات">القطاعات</a>
+                    <a href="#gallery" class="nav-link-clean" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                    <a href="#contact" class="nav-link-clean" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                </div>
+
+                <!-- Right Actions - Cleaner -->
+                <div class="hidden lg:flex items-center gap-6 rtl:flex-row-reverse flex-shrink-0">
+                    <button id="langToggle" class="text-[12px] text-white/55 hover:text-white font-semibold tracking-wide transition-colors">
+                        English
+                    </button>
+                    <span class="w-px h-5 bg-white/20"></span>
+                    <a href="#contact" class="nav-btn-quote">
+                        <span data-en="Get Quote" data-ar="طلب عرض">طلب عرض</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-white/60 hover:text-white p-2 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden hidden bg-gvco-navy/98 backdrop-blur-xl border-t border-white/5">
+            <div class="px-6 py-8 space-y-1">
+                <a href="#home" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                <a href="#about" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="About" data-ar="عن الشركة">عن الشركة</a>
+                <a href="#leadership" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Leadership" data-ar="القيادة">القيادة</a>
+                <a href="#services" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+                <a href="#industries" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Industries" data-ar="القطاعات">القطاعات</a>
+                <a href="#gallery" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                <a href="#contact" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                <div class="pt-6 border-t border-white/10 mt-4 flex flex-col space-y-4">
+                    <button id="mobileLangToggle" class="text-xs text-white/50">English</button>
+                    <a href="#contact" class="btn-corporate text-center justify-center">
+                        <span data-en="Request Quote" data-ar="طلب عرض سعر">طلب عرض سعر</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Clean Cinematic Executive -->
+    <section id="home" class="relative min-h-screen overflow-hidden bg-gvco-navy">
+
+        <!-- Desktop Layout - Balanced Split -->
+        <div class="hidden lg:flex min-h-screen hero-desktop-layout">
+
+            <!-- LEFT: Industrial Image (45%) -->
+            <div class="w-[45%] relative hero-image-container">
+                <div class="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1400&q=85&auto=format&fit=crop"
+                        alt="Industrial Manufacturing"
+                        class="w-full h-full object-cover hero-image"
+                        style="object-position: 60% center;"
+                    >
+                </div>
+                <!-- Cinematic Overlays - Balanced -->
+                <div class="absolute inset-0 bg-gvco-navy/35"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-gvco-navy/50 to-gvco-navy"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-gvco-navy/60 via-transparent to-gvco-navy/30"></div>
+            </div>
+
+            <!-- Content Area (55%) -->
+            <div class="w-[55%] relative flex items-center hero-content-container">
+                <div class="w-full max-w-[560px] hero-content-inner" style="margin-top: -3vh;">
+
+                    <!-- Premium Metadata Subtitle -->
+                    <div data-aos="fade-up" data-aos-duration="400" class="hero-metadata-premium flex items-center gap-3 mb-6">
+                        <span class="text-[10px] text-white/40 font-medium tracking-[0.2em]" data-en="Jeddah, Saudi Arabia" data-ar="جدة، المملكة العربية السعودية">جدة، المملكة العربية السعودية</span>
+                        <span class="w-1 h-1 rounded-full bg-gvco-gold/60"></span>
+                        <span class="text-[10px] text-white/40 font-medium tracking-[0.2em]" data-en="Established 2008" data-ar="تأسست ٢٠٠٨">تأسست ٢٠٠٨</span>
+                    </div>
+
+                    <!-- Heading -->
+                    <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="hero-heading-premium mb-5">
+                        <span class="block" data-en="Precision Industrial" data-ar="التصنيع الصناعي الدقيق">التصنيع الصناعي الدقيق</span>
+                        <span class="block mt-1" data-en="Manufacturing" data-ar="والتصنيع المتقدم">والتصنيع المتقدم</span>
+                    </h1>
+
+                    <!-- Gold Accent -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="hero-accent-bar w-16 h-[2px] bg-gradient-to-r from-gvco-gold to-gvco-gold/60 mb-6"></div>
+
+                    <!-- Description -->
+                    <p data-aos="fade-up" data-aos-delay="150" class="hero-description text-[15px] text-white/50 leading-[1.85] mb-7 max-w-[440px]"
+                       data-en="CNC machining, industrial welding, and steel fabrication for Saudi Arabia's Oil & Gas, Petrochemical, and Manufacturing sectors."
+                       data-ar="خدمات التصنيع باستخدام الحاسب الآلي واللحام الصناعي وتصنيع الفولاذ لقطاعات النفط والغاز والبتروكيماويات.">
+                        خدمات التصنيع باستخدام الحاسب الآلي واللحام الصناعي وتصنيع الفولاذ لقطاعات النفط والغاز والبتروكيماويات.
+                    </p>
+
+                    <!-- Credentials -->
+                    <div data-aos="fade-up" data-aos-delay="200" class="hero-credentials flex flex-wrap items-center gap-2.5 mb-8">
+                        <span class="credential-tag-clean">ISO 9001:2015</span>
+                        <span class="credential-tag-clean">ARAMCO Approved</span>
+                        <span class="credential-tag-clean">SABIC Vendor</span>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div data-aos="fade-up" data-aos-delay="250" class="hero-cta flex items-center gap-5 mb-12">
+                        <a href="#services" class="hero-btn-primary group">
+                            <span data-en="Our Services" data-ar="خدماتنا">خدماتنا</span>
+                            <svg class="w-4 h-4 mr-2.5 rtl:rotate-180 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="hero-btn-secondary">
+                            <span data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</span>
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div data-aos="fade-up" data-aos-delay="300" class="hero-stats flex items-center">
+                        <div class="stat-block pl-10">
+                            <div class="stat-number">
+                                <span class="counter" data-target="17">0</span><span class="gold-plus">+</span>
+                            </div>
+                            <div class="stat-label" data-en="Years" data-ar="عام">عام</div>
+                        </div>
+                        <div class="stats-divider mx-3"></div>
+                        <div class="stat-block px-10">
+                            <div class="stat-number">
+                                <span class="counter" data-target="500">0</span><span class="gold-plus">+</span>
+                            </div>
+                            <div class="stat-label" data-en="Projects" data-ar="مشروع">مشروع</div>
+                        </div>
+                        <div class="stats-divider mx-3"></div>
+                        <div class="stat-block pr-10">
+                            <div class="stat-number">
+                                <span class="counter" data-target="50">0</span><span class="gold-plus">+</span>
+                            </div>
+                            <div class="stat-label" data-en="Clients" data-ar="عملاء">عملاء</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Layout -->
+        <div class="lg:hidden min-h-screen flex flex-col">
+            <!-- Mobile Image with Balanced Overlay -->
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80&auto=format&fit=crop"
+                    alt="Industrial Manufacturing"
+                    class="w-full h-full object-cover"
+                    style="filter: brightness(0.45) contrast(1.1);"
+                >
+                <div class="absolute inset-0 bg-gvco-navy/50"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-gvco-navy/40 via-gvco-navy/60 to-gvco-navy"></div>
+            </div>
+
+            <!-- Mobile Content -->
+            <div class="relative z-10 flex-1 flex items-center px-6 py-24">
+                <div class="w-full max-w-md mx-auto text-center">
+
+                    <!-- Metadata -->
+                    <div class="hero-metadata-premium flex items-center justify-center gap-2.5 mb-5">
+                        <span class="text-[9px] text-white/40 font-medium tracking-[0.15em]" data-en="Jeddah, Saudi Arabia" data-ar="جدة، السعودية">جدة، السعودية</span>
+                        <span class="w-1 h-1 rounded-full bg-gvco-gold/50"></span>
+                        <span class="text-[9px] text-white/40 font-medium tracking-[0.15em]" data-en="Est. 2008" data-ar="تأسست ٢٠٠٨">تأسست ٢٠٠٨</span>
+                    </div>
+
+                    <h1 class="hero-heading-premium mb-4">
+                        <span class="block text-[1.875rem] sm:text-[2.25rem] font-bold text-white leading-[1.2]" data-en="Precision Industrial" data-ar="التصنيع الصناعي الدقيق">التصنيع الصناعي الدقيق</span>
+                        <span class="block text-[1.875rem] sm:text-[2.25rem] font-bold text-white leading-[1.2] mt-1" data-en="Manufacturing" data-ar="والتصنيع المتقدم">والتصنيع المتقدم</span>
+                    </h1>
+
+                    <div class="hero-accent-bar w-12 h-[2px] bg-gradient-to-r from-gvco-gold to-gvco-gold/60 mx-auto mb-5"></div>
+
+                    <p class="hero-description text-[14px] text-white/50 leading-[1.8] mb-6 max-w-xs mx-auto"
+                       data-en="CNC machining, industrial welding, and steel fabrication for Saudi Arabia's industrial sectors."
+                       data-ar="خدمات التصنيع واللحام الصناعي وتصنيع الفولاذ للقطاعات الصناعية.">
+                        خدمات التصنيع واللحام الصناعي وتصنيع الفولاذ للقطاعات الصناعية.
+                    </p>
+
+                    <div class="hero-credentials flex flex-wrap items-center justify-center gap-2 mb-7">
+                        <span class="credential-tag-clean">ISO 9001:2015</span>
+                        <span class="credential-tag-clean">أرامكو معتمد</span>
+                    </div>
+
+                    <div class="hero-cta flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+                        <a href="#services" class="hero-btn-primary w-full sm:w-auto justify-center">
+                            <span data-en="Our Services" data-ar="خدماتنا">خدماتنا</span>
+                        </a>
+                        <a href="#contact" class="hero-btn-secondary w-full sm:w-auto justify-center">
+                            <span data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats flex items-center justify-center gap-8">
+                        <div class="stat-block text-center">
+                            <div class="stat-number text-[1.5rem]">17<span class="gold-plus">+</span></div>
+                            <div class="stat-label" data-en="Years" data-ar="عام">عام</div>
+                        </div>
+                        <div class="stats-divider h-8"></div>
+                        <div class="stat-block text-center">
+                            <div class="stat-number text-[1.5rem]">500<span class="gold-plus">+</span></div>
+                            <div class="stat-label" data-en="Projects" data-ar="مشروع">مشروع</div>
+                        </div>
+                        <div class="stats-divider h-8"></div>
+                        <div class="stat-block text-center">
+                            <div class="stat-number text-[1.5rem]">50<span class="gold-plus">+</span></div>
+                            <div class="stat-label" data-en="Clients" data-ar="عملاء">عملاء</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-16 z-20">
+            <a href="#about" class="flex flex-col items-center text-white/20 hover:text-white/40 transition-colors">
+                <div class="w-[18px] h-[28px] border border-current rounded-full flex items-start justify-center pt-1.5">
+                    <div class="w-[2px] h-[5px] bg-current rounded-full animate-bounce"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- About Section -->
+    <section id="about" class="py-28 lg:py-36 relative overflow-hidden section-gradient-1">
+        <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <!-- Content -->
+                <div class="order-2 lg:order-1 rtl:order-2">
+                    <div data-aos="fade-up" class="inline-flex items-center px-5 py-2.5 rounded-full bg-gvco-blue/10 border border-gvco-blue/20 mb-8">
+                        <span class="enterprise-label" data-en="About GVCO" data-ar="عن شركة الرؤيا الذهبية">عن شركة الرؤيا الذهبية</span>
+                    </div>
+
+                    <h2 data-aos="fade-up" data-aos-delay="100" class="section-headline mb-8">
+                        <span data-en="Your Trusted Partner in" data-ar="شريككم الموثوق في">شريككم الموثوق في</span>
+                        <span class="text-gradient block mt-2" data-en="Industrial Excellence" data-ar="التميز الصناعي">التميز الصناعي</span>
+                    </h2>
+
+                    <p data-aos="fade-up" data-aos-delay="200" class="body-text-large text-white/60 mb-6"
+                       data-en="Golden Vision Company (GVCO) has established itself as a cornerstone of industrial manufacturing in Saudi Arabia since 2008. Headquartered in Jeddah, we serve as the preferred manufacturing partner for the Kingdom's most demanding enterprises."
+                       data-ar="أسست شركة الرؤيا الذهبية (GVCO) مكانتها كركيزة أساسية في التصنيع الصناعي بالمملكة العربية السعودية منذ عام ٢٠٠٨. يقع مقرنا الرئيسي في جدة، ونعمل كشريك تصنيع مفضل لأكثر المؤسسات تطلباً في المملكة.">
+                        أسست شركة الرؤيا الذهبية (GVCO) مكانتها كركيزة أساسية في التصنيع الصناعي بالمملكة العربية السعودية منذ عام ٢٠٠٨. يقع مقرنا الرئيسي في جدة، ونعمل كشريك تصنيع مفضل لأكثر المؤسسات تطلباً في المملكة.
+                    </p>
+
+                    <p data-aos="fade-up" data-aos-delay="300" class="text-white/50 text-base mb-10 leading-relaxed"
+                       data-en="Our state-of-the-art facility combines cutting-edge CNC technology, precision engineering equipment, and a team of highly skilled professionals committed to delivering uncompromising quality in every project we undertake."
+                       data-ar="يجمع مرفقنا المتطور بين أحدث تقنيات الحاسب الآلي ومعدات الهندسة الدقيقة وفريق من المحترفين ذوي المهارات العالية الملتزمين بتقديم جودة لا تقبل المساومة في كل مشروع نتولاه.">
+                        يجمع مرفقنا المتطور بين أحدث تقنيات الحاسب الآلي ومعدات الهندسة الدقيقة وفريق من المحترفين ذوي المهارات العالية الملتزمين بتقديم جودة لا تقبل المساومة في كل مشروع نتولاه.
+                    </p>
+
+                    <!-- Certifications -->
+                    <div data-aos="fade-up" data-aos-delay="400" class="grid sm:grid-cols-2 gap-4 mb-10">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <svg class="w-6 h-6 text-gvco-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <span class="text-white/80 font-medium" data-en="ISO 9001:2015 Certified" data-ar="حاصلون على شهادة ISO 9001:2015">حاصلون على شهادة ISO 9001:2015</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <svg class="w-6 h-6 text-gvco-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <span class="text-white/80 font-medium" data-en="Rapid 48-Hour Turnaround" data-ar="تسليم سريع خلال ٤٨ ساعة">تسليم سريع خلال ٤٨ ساعة</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <svg class="w-6 h-6 text-gvco-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <span class="text-white/80 font-medium" data-en="5-Axis CNC Capability" data-ar="قدرات CNC خماسية المحاور">قدرات CNC خماسية المحاور</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <svg class="w-6 h-6 text-gvco-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <span class="text-white/80 font-medium" data-en="150+ Skilled Engineers" data-ar="أكثر من ١٥٠ مهندس متخصص">أكثر من ١٥٠ مهندس متخصص</span>
+                        </div>
+                    </div>
+
+                    <a data-aos="fade-up" data-aos-delay="500" href="#contact" class="btn-primary inline-flex group">
+                        <span data-en="Discuss Your Project" data-ar="ناقش مشروعك معنا">ناقش مشروعك معنا</span>
+                        <svg class="w-5 h-5 ms-2 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Visual Element - Industrial Manufacturing -->
+                <div data-aos="fade-up" class="order-1 lg:order-2 rtl:order-1">
+                    <div class="about-visual industrial-image-card">
+                        <!-- Industrial Welding / Steel Fabrication -->
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=85&auto=format&fit=crop"
+                             alt="GVCO Industrial Welding and Steel Fabrication"
+                             class="w-full h-full object-cover"
+                             loading="lazy">
+
+                        <!-- Premium Overlay Content -->
+                        <div class="about-visual-inner relative z-10">
+                            <!-- Floating Stat Cards -->
+                            <div class="about-stat about-stat-1 industrial-glow">
+                                <div class="stat-number text-gvco-gold text-3xl">17+</div>
+                                <div class="stat-label text-white/60 mt-1" data-en="Years of Excellence" data-ar="عاماً من التميز">عاماً من التميز</div>
+                            </div>
+
+                            <div class="about-stat about-stat-2 industrial-glow">
+                                <div class="stat-number text-gvco-blue-light text-3xl">100%</div>
+                                <div class="stat-label text-white/60 mt-1" data-en="Quality Guaranteed" data-ar="جودة مضمونة">جودة مضمونة</div>
+                            </div>
+                        </div>
+
+                        <!-- Industrial Badge -->
+                        <div class="absolute bottom-6 left-6 z-10 premium-badge">
+                            ISO 9001:2015 Certified
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-24 lg:py-32 relative overflow-hidden bg-gvco-navy">
+        <!-- Subtle Background -->
+        <div class="absolute inset-0 bg-gradient-to-b from-gvco-navy-light/30 via-transparent to-gvco-navy-light/30"></div>
+
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
+            <!-- Section Header - Clean -->
+            <div class="text-center mb-20">
+                <p data-aos="fade-up" class="text-xs text-white/40 font-medium tracking-widest uppercase mb-4" data-en="Leadership" data-ar="القيادة">القيادة</p>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl lg:text-4xl font-semibold text-white mb-6 tracking-tight">
+                    <span data-en="Executive Team" data-ar="الفريق التنفيذي">الفريق التنفيذي</span>
+                </h2>
+                <div data-aos="fade-up" data-aos-delay="150" class="w-12 h-0.5 bg-gvco-gold mx-auto"></div>
+            </div>
+
+            <!-- Leadership Team Grid -->
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Chairman of the Board - Hussam -->
+                <div data-aos="fade-up" data-aos-delay="0" class="executive-card group">
+                    <div class="executive-photo-frame">
+                        <img src="assets/team/chairman-board.png" alt="Hussam - Chairman of the Board" class="executive-photo">
+                        <div class="executive-photo-overlay"></div>
+                    </div>
+                    <div class="executive-info">
+                        <h3 class="executive-name">Hussam</h3>
+                        <p class="executive-title-en">Chairman of the Board</p>
+                        <p class="executive-title-ar">رئيس مجلس الإدارة</p>
+                    </div>
+                </div>
+
+                <!-- CEO - Adnan -->
+                <div data-aos="fade-up" data-aos-delay="100" class="executive-card group">
+                    <div class="executive-photo-frame">
+                        <img src="assets/team/adnan-ceo.png" alt="Adnan - Chief Executive Officer" class="executive-photo">
+                        <div class="executive-photo-overlay"></div>
+                    </div>
+                    <div class="executive-info">
+                        <h3 class="executive-name">Adnan</h3>
+                        <p class="executive-title-en">Chief Executive Officer</p>
+                        <p class="executive-title-ar">الرئيس التنفيذي</p>
+                    </div>
+                </div>
+
+                <!-- General Manager - Abdulaziz -->
+                <div data-aos="fade-up" data-aos-delay="200" class="executive-card group">
+                    <div class="executive-photo-frame">
+                        <img src="assets/team/abdulaziz-general-manager.png" alt="Abdulaziz - General Manager" class="executive-photo">
+                        <div class="executive-photo-overlay"></div>
+                    </div>
+                    <div class="executive-info">
+                        <h3 class="executive-name">Abdulaziz</h3>
+                        <p class="executive-title-en">General Manager</p>
+                        <p class="executive-title-ar">المدير العام</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-28 lg:py-36 bg-gvco-navy relative overflow-hidden">
+        <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div data-aos="fade-up" class="inline-flex items-center px-5 py-2.5 rounded-full bg-gvco-blue/10 border border-gvco-blue/20 mb-8">
+                    <span class="enterprise-label" data-en="Our Capabilities" data-ar="قدراتنا">قدراتنا</span>
+                </div>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="section-headline mb-8">
+                    <span data-en="Comprehensive Manufacturing" data-ar="حلول تصنيعية">حلول تصنيعية</span>
+                    <span class="text-gradient block mt-2" data-en="Solutions" data-ar="شاملة">شاملة</span>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="section-subheadline text-white/50 max-w-3xl mx-auto"
+                   data-en="From prototype development to large-scale production, we deliver end-to-end manufacturing solutions with precision tolerances as tight as ±0.001mm."
+                   data-ar="من تطوير النماذج الأولية إلى الإنتاج واسع النطاق، نقدم حلول تصنيع شاملة بدقة تصل إلى ±٠.٠٠١ ملم.">
+                    من تطوير النماذج الأولية إلى الإنتاج واسع النطاق، نقدم حلول تصنيع شاملة بدقة تصل إلى ±٠.٠٠١ ملم.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 - CNC -->
+                <div data-aos="fade-up" data-aos-delay="0" class="service-card group" data-service="cnc">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title mb-3 relative z-10" data-en="CNC Milling & Turning" data-ar="الخراطة والتفريز CNC">CNC Milling & Turning</h3>
+                    <p class="card-description relative z-10" data-en="Multi-axis precision machining with tolerances to ±0.001mm for complex aerospace and industrial components." data-ar="تصنيع دقيق متعدد المحاور بتفاوت يصل إلى ±٠.٠٠١ ملم للمكونات الفضائية والصناعية المعقدة.">Multi-axis precision machining with tolerances to ±0.001mm for complex aerospace and industrial components.</p>
+                </div>
+
+                <!-- Service Card 2 - Laser Cutting -->
+                <div data-aos="fade-up" data-aos-delay="100" class="service-card group" data-service="laser">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title mb-3 relative z-10" data-en="Laser & Plasma Cutting" data-ar="القطع بالليزر والبلازما">Laser & Plasma Cutting</h3>
+                    <p class="card-description relative z-10" data-en="High-precision fiber laser cutting up to 25mm steel with intricate patterns and minimal heat affected zones." data-ar="قطع ليزر عالي الدقة للفولاذ حتى ٢٥ ملم مع أنماط معقدة وتأثير حراري أدنى.">High-precision fiber laser cutting up to 25mm steel with intricate patterns and minimal heat affected zones.</p>
+                </div>
+
+                <!-- Service Card 3 - Welding -->
+                <div data-aos="fade-up" data-aos-delay="200" class="service-card group" data-service="welding">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title mb-3 relative z-10" data-en="Industrial Welding" data-ar="اللحام الصناعي">Industrial Welding</h3>
+                    <p class="card-description relative z-10" data-en="AWS & ASME certified welding including TIG, MIG, and orbital welding for critical pressure vessel applications." data-ar="لحام معتمد AWS و ASME بما في ذلك TIG و MIG واللحام المداري لتطبيقات أوعية الضغط الحرجة.">AWS & ASME certified welding including TIG, MIG, and orbital welding for critical pressure vessel applications.</p>
+                </div>
+
+                <!-- Service Card 4 - Sheet Metal -->
+                <div data-aos="fade-up" data-aos-delay="300" class="service-card group" data-service="sheet">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title mb-3 relative z-10" data-en="Sheet Metal Fabrication" data-ar="تشكيل الصفائح المعدنية">Sheet Metal Fabrication</h3>
+                    <p class="card-description relative z-10" data-en="Complete sheet metal solutions from CNC bending to complex enclosure assemblies with powder coating." data-ar="حلول صفائح معدنية متكاملة من الثني CNC إلى تجميعات الحاويات المعقدة مع الطلاء.">Complete sheet metal solutions from CNC bending to complex enclosure assemblies with powder coating.</p>
+                </div>
+
+                <!-- Service Card 5 - Mechanical Projects -->
+                <div data-aos="fade-up" data-aos-delay="400" class="service-card group" data-service="project">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title mb-3 relative z-10" data-en="Turnkey Projects" data-ar="المشاريع المتكاملة">Turnkey Projects</h3>
+                    <p class="card-description relative z-10" data-en="End-to-end mechanical project execution from design engineering to installation and commissioning." data-ar="تنفيذ مشاريع ميكانيكية متكاملة من الهندسة التصميمية إلى التركيب والتشغيل.">End-to-end mechanical project execution from design engineering to installation and commissioning.</p>
+                </div>
+
+                <!-- Service Card 6 - Maintenance -->
+                <div data-aos="fade-up" data-aos-delay="500" class="service-card group" data-service="maintenance">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title mb-3 relative z-10" data-en="Industrial Maintenance" data-ar="الصيانة الصناعية">Industrial Maintenance</h3>
+                    <p class="card-description relative z-10" data-en="Preventive and corrective maintenance programs for rotating equipment, conveyors, and production lines." data-ar="برامج صيانة وقائية وتصحيحية للمعدات الدوارة والناقلات وخطوط الإنتاج.">Preventive and corrective maintenance programs for rotating equipment, conveyors, and production lines.</p>
+                </div>
+            </div>
+
+            <!-- Additional Services List -->
+            <div data-aos="fade-up" data-aos-delay="300" class="mt-16 text-center">
+                <p class="text-white/40 mb-6" data-en="Additional capabilities include:" data-ar="قدرات إضافية تشمل:">Additional capabilities include:</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="service-tag" data-en="Waterjet Cutting" data-ar="القطع بالماء">Waterjet Cutting</span>
+                    <span class="service-tag" data-en="EDM Machining" data-ar="التشغيل الكهربائي">EDM Machining</span>
+                    <span class="service-tag" data-en="Heat Treatment" data-ar="المعالجة الحرارية">Heat Treatment</span>
+                    <span class="service-tag" data-en="Metal Casting" data-ar="صب المعادن">Metal Casting</span>
+                    <span class="service-tag" data-en="Surface Finishing" data-ar="تشطيب الأسطح">Surface Finishing</span>
+                    <span class="service-tag" data-en="Reverse Engineering" data-ar="الهندسة العكسية">Reverse Engineering</span>
+                    <span class="service-tag" data-en="Conveyor Systems" data-ar="أنظمة النقل">Conveyor Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Industries Section -->
+    <section id="industries" class="py-28 lg:py-36 relative overflow-hidden section-gradient-2">
+        <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div data-aos="fade-up" class="inline-flex items-center px-5 py-2.5 rounded-full bg-gvco-gold/10 border border-gvco-gold/20 mb-8">
+                    <span class="enterprise-label" data-en="Industries Served" data-ar="القطاعات التي نخدمها">Industries Served</span>
+                </div>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="section-headline mb-8">
+                    <span data-en="Powering Saudi Arabia's" data-ar="ندعم القطاعات">Powering Saudi Arabia's</span>
+                    <span class="text-gradient block mt-2" data-en="Critical Industries" data-ar="الحيوية في المملكة">Critical Industries</span>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="section-subheadline text-white/50 max-w-3xl mx-auto"
+                   data-en="We serve the Kingdom's most demanding sectors with precision manufacturing solutions that meet stringent industry standards and regulatory requirements."
+                   data-ar="نخدم أكثر القطاعات تطلباً في المملكة بحلول تصنيع دقيقة تلبي المعايير الصناعية الصارمة والمتطلبات التنظيمية.">
+                    We serve the Kingdom's most demanding sectors with precision manufacturing solutions that meet stringent industry standards and regulatory requirements.
+                </p>
+            </div>
+
+            <!-- Industries Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-6">
+                <div data-aos="zoom-in" data-aos-delay="0" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Oil & Gas" data-ar="النفط والغاز">Oil & Gas</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="50" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Aviation" data-ar="الطيران">Aviation</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="100" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Power & Energy" data-ar="الطاقة والكهرباء">Power & Energy</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="150" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Petrochemical" data-ar="البتروكيماويات">Petrochemical</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="200" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Manufacturing" data-ar="التصنيع">Manufacturing</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="250" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Logistics" data-ar="اللوجستيات">Logistics</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="300" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18z"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Food & Beverage" data-ar="الأغذية والمشروبات">Food & Beverage</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="350" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Construction" data-ar="البناء والتشييد">Construction</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="400" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Water & Utilities" data-ar="المياه والمرافق">Water & Utilities</span>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="450" class="industry-card">
+                    <div class="industry-icon">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <span class="text-sm font-semibold relative z-10" data-en="Defense" data-ar="الدفاع">Defense</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Clients Section - Premium Animated Brand Wall -->
+    <section id="clients" class="py-28 lg:py-36 bg-gvco-navy relative overflow-hidden">
+        <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
+        <!-- Section Header -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div data-aos="fade-up" class="inline-flex items-center px-5 py-2.5 rounded-full bg-gvco-blue/10 border border-gvco-blue/20 mb-8">
+                    <span class="enterprise-label" data-en="Trusted Partners" data-ar="شركاء النجاح">Trusted Partners</span>
+                </div>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="section-headline mb-8 cinematic-heading">
+                    <span data-en="Trusted by Industry" data-ar="موثوق من قبل">Trusted by Industry</span>
+                    <span class="text-gradient block mt-2" data-en="Leaders" data-ar="رواد الصناعة">Leaders</span>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="section-subheadline text-white/50 max-w-3xl mx-auto"
+                   data-en="We're proud to serve Saudi Arabia's most prestigious organizations, delivering precision manufacturing solutions that meet their exacting quality standards."
+                   data-ar="نفخر بخدمة أرقى المؤسسات في المملكة العربية السعودية، ونقدم حلول تصنيع دقيقة تلبي معايير الجودة العالية لديهم.">
+                    We're proud to serve Saudi Arabia's most prestigious organizations, delivering precision manufacturing solutions that meet their exacting quality standards.
+                </p>
+            </div>
+        </div>
+
+        <!-- Animated Logo Marquee - Full Width -->
+        <div class="logo-marquee-container" data-aos="fade-up" data-aos-delay="300">
+            <!-- Gradient Overlays for Smooth Edges -->
+            <div class="logo-marquee-fade logo-marquee-fade-left"></div>
+            <div class="logo-marquee-fade logo-marquee-fade-right"></div>
+
+            <!-- Row 1 - Moving Right to Left - Premium Industrial Clients -->
+            <div class="logo-marquee-row mb-5">
+                <div class="logo-marquee-track logo-marquee-animate">
+                    <!-- Set 1 -->
+                    <div class="logo-marquee-item"><img src="assets/clients/aramco.svg" alt="Saudi Aramco" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/sabic.svg" alt="SABIC" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/savola.svg" alt="Savola Group" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/saudia.svg" alt="Saudi Airlines" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/sec.svg" alt="Saudi Electricity Company" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/almarai.svg" alt="Almarai" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/zamil.svg" alt="Zamil Industrial" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/binladin.svg" alt="Binladin Group" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/tasnee.svg" alt="TASNEE" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/nwc.svg" alt="National Water Company" loading="lazy"></div>
+                    <!-- Set 2 (Duplicate for seamless loop) -->
+                    <div class="logo-marquee-item"><img src="assets/clients/aramco.svg" alt="Saudi Aramco" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/sabic.svg" alt="SABIC" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/savola.svg" alt="Savola Group" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/saudia.svg" alt="Saudi Airlines" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/sec.svg" alt="Saudi Electricity Company" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/almarai.svg" alt="Almarai" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/zamil.svg" alt="Zamil Industrial" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/binladin.svg" alt="Binladin Group" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/tasnee.svg" alt="TASNEE" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/nwc.svg" alt="National Water Company" loading="lazy"></div>
+                </div>
+            </div>
+
+            <!-- Row 2 - Moving Left to Right - Consumer & Industrial Partners -->
+            <div class="logo-marquee-row">
+                <div class="logo-marquee-track logo-marquee-animate-reverse">
+                    <!-- Set 1 -->
+                    <div class="logo-marquee-item"><img src="assets/clients/pepsi.svg" alt="Pepsi" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/coca-cola.svg" alt="Coca-Cola" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/nestle.svg" alt="Nestlé" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/indomie.svg" alt="Indomie" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/americana.svg" alt="Americana" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/alfanar.svg" alt="Alfanar" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/bahra.svg" alt="Bahra Cables" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/mepco.svg" alt="MEPCO" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/ghandour.png" alt="Ghandour" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/srmcc.png" alt="SRMCC" loading="lazy"></div>
+                    <!-- Set 2 (Duplicate for seamless loop) -->
+                    <div class="logo-marquee-item"><img src="assets/clients/pepsi.svg" alt="Pepsi" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/coca-cola.svg" alt="Coca-Cola" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/nestle.svg" alt="Nestlé" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/indomie.svg" alt="Indomie" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/americana.svg" alt="Americana" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/alfanar.svg" alt="Alfanar" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/bahra.svg" alt="Bahra Cables" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/mepco.svg" alt="MEPCO" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/ghandour.png" alt="Ghandour" loading="lazy"></div>
+                    <div class="logo-marquee-item"><img src="assets/clients/srmcc.png" alt="SRMCC" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div data-aos="fade-up" data-aos-delay="400" class="mt-20">
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="text-3xl lg:text-4xl font-bold text-gvco-gold">50+</div>
+                        <div class="text-sm text-white/50 mt-1" data-en="Enterprise Partners" data-ar="شريك من المؤسسات">Enterprise Partners</div>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <div class="text-3xl lg:text-4xl font-bold text-gvco-gold">98%</div>
+                        <div class="text-sm text-white/50 mt-1" data-en="Client Retention" data-ar="نسبة الاحتفاظ بالعملاء">Client Retention</div>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <div class="text-3xl lg:text-4xl font-bold text-gvco-gold">500+</div>
+                        <div class="text-sm text-white/50 mt-1" data-en="Projects Completed" data-ar="مشروع منجز">Projects Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Industrial Showcase Gallery Section -->
+    <section id="gallery" class="py-28 lg:py-36 bg-gvco-navy relative overflow-hidden">
+        <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div data-aos="fade-up" class="inline-flex items-center px-5 py-2.5 rounded-full bg-gvco-gold/10 border border-gvco-gold/20 mb-8">
+                    <span class="enterprise-label" data-en="Our Facilities" data-ar="منشآتنا">Our Facilities</span>
+                </div>
+                <h2 data-aos="fade-up" data-aos-delay="100" class="section-headline mb-8 cinematic-heading">
+                    <span data-en="World-Class" data-ar="منشآت صناعية">World-Class</span>
+                    <span class="text-gradient block mt-2" data-en="Manufacturing" data-ar="عالمية المستوى">Manufacturing</span>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" class="section-subheadline text-white/50 max-w-3xl mx-auto"
+                   data-en="State-of-the-art facilities equipped with advanced CNC machinery, precision equipment, and cutting-edge technology."
+                   data-ar="منشآت حديثة مجهزة بآلات CNC متقدمة ومعدات دقيقة وتقنيات متطورة.">
+                    State-of-the-art facilities equipped with advanced CNC machinery, precision equipment, and cutting-edge technology.
+                </p>
+            </div>
+
+            <!-- Industrial Photo Gallery Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                <!-- Large Feature Image - Industrial Welding -->
+                <div data-aos="fade-up" data-aos-delay="0" class="col-span-2 row-span-2 photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=85&auto=format&fit=crop"
+                         alt="Industrial Welding Fabrication"
+                         loading="lazy">
+                    <div class="absolute bottom-4 left-4 z-10">
+                        <span class="premium-badge" data-en="Industrial Welding" data-ar="اللحام الصناعي">Industrial Welding</span>
+                    </div>
+                </div>
+
+                <!-- CNC Machining -->
+                <div data-aos="fade-up" data-aos-delay="100" class="photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=600&q=85&auto=format&fit=crop"
+                         alt="CNC Machining"
+                         loading="lazy">
+                    <div class="absolute bottom-3 left-3 z-10">
+                        <span class="text-xs text-white/80 font-medium" data-en="CNC" data-ar="CNC">CNC</span>
+                    </div>
+                </div>
+
+                <!-- Steel Fabrication -->
+                <div data-aos="fade-up" data-aos-delay="150" class="photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=600&q=85&auto=format&fit=crop"
+                         alt="Steel Fabrication"
+                         loading="lazy">
+                    <div class="absolute bottom-3 left-3 z-10">
+                        <span class="text-xs text-white/80 font-medium" data-en="Fabrication" data-ar="التصنيع">Fabrication</span>
+                    </div>
+                </div>
+
+                <!-- Oil & Gas Facility -->
+                <div data-aos="fade-up" data-aos-delay="200" class="photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1586953208270-767fc7b8a150?w=600&q=85&auto=format&fit=crop"
+                         alt="Oil Refinery Industrial Facility"
+                         loading="lazy">
+                    <div class="absolute bottom-3 left-3 z-10">
+                        <span class="text-xs text-white/80 font-medium" data-en="Oil & Gas" data-ar="النفط والغاز">Oil & Gas</span>
+                    </div>
+                </div>
+
+                <!-- Heavy Machinery -->
+                <div data-aos="fade-up" data-aos-delay="250" class="photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=85&auto=format&fit=crop"
+                         alt="Heavy Industrial Machinery"
+                         loading="lazy">
+                    <div class="absolute bottom-3 left-3 z-10">
+                        <span class="text-xs text-white/80 font-medium" data-en="Machinery" data-ar="المعدات">Machinery</span>
+                    </div>
+                </div>
+
+                <!-- Steel Processing - Wide -->
+                <div data-aos="fade-up" data-aos-delay="300" class="col-span-2 photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=85&auto=format&fit=crop"
+                         alt="Metal Cutting and Processing"
+                         loading="lazy">
+                    <div class="absolute bottom-4 left-4 z-10">
+                        <span class="premium-badge" data-en="Precision Cutting" data-ar="القطع الدقيق">Precision Cutting</span>
+                    </div>
+                </div>
+
+                <!-- Industrial Pipes -->
+                <div data-aos="fade-up" data-aos-delay="350" class="photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85&auto=format&fit=crop"
+                         alt="Industrial Piping"
+                         loading="lazy">
+                    <div class="absolute bottom-3 left-3 z-10">
+                        <span class="text-xs text-white/80 font-medium" data-en="Piping" data-ar="الأنابيب">Piping</span>
+                    </div>
+                </div>
+
+                <!-- Manufacturing Floor -->
+                <div data-aos="fade-up" data-aos-delay="400" class="photo-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=85&auto=format&fit=crop"
+                         alt="Manufacturing Production"
+                         loading="lazy">
+                    <div class="absolute bottom-3 left-3 z-10">
+                        <span class="text-xs text-white/80 font-medium" data-en="Production" data-ar="الإنتاج">Production</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industrial Stats Bar -->
+            <div data-aos="fade-up" data-aos-delay="450" class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-xl bg-white/[0.02] border border-white/5">
+                    <div class="text-3xl lg:text-4xl font-bold text-gvco-gold mb-2">15,000<span class="text-gvco-gold-light text-2xl">m²</span></div>
+                    <div class="text-sm text-white/50" data-en="Facility Area" data-ar="مساحة المنشأة">Facility Area</div>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-white/[0.02] border border-white/5">
+                    <div class="text-3xl lg:text-4xl font-bold text-gvco-gold mb-2">50+</div>
+                    <div class="text-sm text-white/50" data-en="CNC Machines" data-ar="ماكينات CNC">CNC Machines</div>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-white/[0.02] border border-white/5">
+                    <div class="text-3xl lg:text-4xl font-bold text-gvco-gold mb-2">±0.001<span class="text-gvco-gold-light text-lg">mm</span></div>
+                    <div class="text-sm text-white/50" data-en="Precision Tolerance" data-ar="دقة التفاوت">Precision Tolerance</div>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-white/[0.02] border border-white/5">
+                    <div class="text-3xl lg:text-4xl font-bold text-gvco-gold mb-2">24/7</div>
+                    <div class="text-sm text-white/50" data-en="Production Capacity" data-ar="طاقة الإنتاج">Production Capacity</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-28 lg:py-36 relative overflow-hidden section-gradient-1">
+        <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
+                <!-- Contact Info -->
+                <div class="order-2 lg:order-1 rtl:order-2">
+                    <div data-aos="fade-up" class="inline-flex items-center px-5 py-2.5 rounded-full bg-gvco-blue/10 border border-gvco-blue/20 mb-8">
+                        <span class="enterprise-label" data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</span>
+                    </div>
+
+                    <h2 data-aos="fade-up" data-aos-delay="100" class="section-headline mb-8">
+                        <span data-en="Let's Discuss Your" data-ar="دعنا نناقش">دعنا نناقش</span>
+                        <span class="text-gradient block mt-2" data-en="Next Project" data-ar="مشروعك القادم">مشروعك القادم</span>
+                    </h2>
+
+                    <p data-aos="fade-up" data-aos-delay="200" class="text-white/50 text-lg lg:text-xl mb-12 leading-relaxed"
+                       data-en="Our engineering team is ready to provide expert consultation and customized solutions for your manufacturing requirements. Contact us today for a no-obligation quote."
+                       data-ar="فريقنا الهندسي جاهز لتقديم استشارات متخصصة وحلول مخصصة لمتطلبات التصنيع الخاصة بكم. تواصلوا معنا اليوم للحصول على عرض سعر بدون التزام.">
+                        فريقنا الهندسي جاهز لتقديم استشارات متخصصة وحلول مخصصة لمتطلبات التصنيع الخاصة بكم. تواصلوا معنا اليوم للحصول على عرض سعر بدون التزام.
+                    </p>
+
+                    <!-- Contact Details -->
+                    <div data-aos="fade-up" data-aos-delay="300" class="space-y-6">
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <svg class="w-6 h-6 text-gvco-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 text-lg" data-en="Head Office" data-ar="المقر الرئيسي">المقر الرئيسي</h4>
+                                <p class="text-white/50" data-en="Jeddah Industrial City, Saudi Arabia" data-ar="المدينة الصناعية، جدة، المملكة العربية السعودية">المدينة الصناعية، جدة، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <svg class="w-6 h-6 text-gvco-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 text-lg" data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</h4>
+                                <a href="mailto:info@saudilathe.com" class="text-gvco-blue-light hover:text-gvco-blue-bright transition-colors">info@saudilathe.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <svg class="w-6 h-6 text-gvco-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 text-lg" data-en="Phone" data-ar="الهاتف">الهاتف</h4>
+                                <a href="tel:920011054" class="text-gvco-blue-light hover:text-gvco-blue-bright transition-colors" dir="ltr">920011054</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div data-aos="fade-up" class="order-1 lg:order-2 rtl:order-1">
+                    <div class="contact-form-wrapper">
+                        <h3 class="text-2xl font-bold mb-6" data-en="Request a Quote" data-ar="طلب عرض سعر">طلب عرض سعر</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium mb-3 text-white/70" data-en="Full Name" data-ar="الاسم الكامل">الاسم الكامل</label>
+                                    <input type="text" class="form-input" data-placeholder-en="Your full name" data-placeholder-ar="اسمك الكامل" placeholder="اسمك الكامل" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-3 text-white/70" data-en="Company" data-ar="الشركة">الشركة</label>
+                                    <input type="text" class="form-input" data-placeholder-en="Company name" data-placeholder-ar="اسم الشركة" placeholder="اسم الشركة">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium mb-3 text-white/70" data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</label>
+                                    <input type="email" class="form-input" data-placeholder-en="your@email.com" data-placeholder-ar="بريدك@email.com" placeholder="بريدك@email.com" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-3 text-white/70" data-en="Phone" data-ar="رقم الهاتف">رقم الهاتف</label>
+                                    <input type="tel" class="form-input" placeholder="+966" dir="ltr">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium mb-3 text-white/70" data-en="Service Required" data-ar="الخدمة المطلوبة">الخدمة المطلوبة</label>
+                                <select class="form-input">
+                                    <option value="" data-en="Select a service" data-ar="اختر خدمة">اختر خدمة</option>
+                                    <option value="cnc" data-en="CNC Machining" data-ar="التصنيع CNC">التصنيع CNC</option>
+                                    <option value="laser" data-en="Laser Cutting" data-ar="القطع بالليزر">القطع بالليزر</option>
+                                    <option value="sheet" data-en="Sheet Metal" data-ar="الصفائح المعدنية">الصفائح المعدنية</option>
+                                    <option value="welding" data-en="Industrial Welding" data-ar="اللحام الصناعي">اللحام الصناعي</option>
+                                    <option value="project" data-en="Turnkey Project" data-ar="مشروع متكامل">مشروع متكامل</option>
+                                    <option value="maintenance" data-en="Maintenance" data-ar="الصيانة">الصيانة</option>
+                                    <option value="other" data-en="Other Services" data-ar="خدمات أخرى">خدمات أخرى</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium mb-3 text-white/70" data-en="Project Details" data-ar="تفاصيل المشروع">تفاصيل المشروع</label>
+                                <textarea class="form-input min-h-[140px] resize-none" data-placeholder-en="Describe your project requirements..." data-placeholder-ar="اوصف متطلبات مشروعك..." placeholder="اوصف متطلبات مشروعك..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary w-full py-5 text-lg justify-center group">
+                                <span data-en="Submit Inquiry" data-ar="إرسال الاستفسار">إرسال الاستفسار</span>
+                                <svg class="w-5 h-5 ms-3 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gvco-navy-light border-t border-white/5 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <img src="asset/GVCO-logo-.png" alt="GVCO Logo" class="h-14 w-auto mb-8">
+                    <p class="text-white/50 text-sm mb-4 leading-relaxed"
+                       data-en="Golden Vision Company - Your trusted partner for precision industrial manufacturing and engineering solutions in Saudi Arabia since 2008."
+                       data-ar="شركة الرؤيا الذهبية - شريككم الموثوق في التصنيع الصناعي الدقيق والحلول الهندسية في المملكة العربية السعودية منذ عام ٢٠٠٨.">
+                        Golden Vision Company - Your trusted partner for precision industrial manufacturing and engineering solutions in Saudi Arabia since 2008.
+                    </p>
+                    <p class="text-gvco-gold text-lg font-arabic font-bold">شركة الرؤيا الذهبية المحدودة</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading mb-6" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#about" class="text-white/50 hover:text-white transition-colors text-sm" data-en="About Us" data-ar="عن الشركة">About Us</a></li>
+                        <li><a href="#services" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+                        <li><a href="#industries" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Industries" data-ar="القطاعات">Industries</a></li>
+                        <li><a href="#clients" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Clients" data-ar="عملاؤنا">Clients</a></li>
+                        <li><a href="#contact" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="footer-heading mb-6" data-en="Services" data-ar="الخدمات">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#services" class="text-white/50 hover:text-white transition-colors text-sm" data-en="CNC Machining" data-ar="التصنيع CNC">CNC Machining</a></li>
+                        <li><a href="#services" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Laser Cutting" data-ar="القطع بالليزر">Laser Cutting</a></li>
+                        <li><a href="#services" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Industrial Welding" data-ar="اللحام الصناعي">Industrial Welding</a></li>
+                        <li><a href="#services" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Sheet Metal" data-ar="الصفائح المعدنية">Sheet Metal</a></li>
+                        <li><a href="#services" class="text-white/50 hover:text-white transition-colors text-sm" data-en="Maintenance" data-ar="الصيانة">Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-heading mb-6" data-en="Contact Info" data-ar="معلومات التواصل">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="text-white/50 text-sm" data-en="Jeddah Industrial City, Saudi Arabia" data-ar="المدينة الصناعية، جدة">Jeddah Industrial City, Saudi Arabia</li>
+                        <li><a href="mailto:info@saudilathe.com" class="text-white/50 hover:text-white transition-colors text-sm">info@saudilathe.com</a></li>
+                        <li><a href="tel:920011054" class="text-white/50 hover:text-white transition-colors text-sm" dir="ltr">920011054</a></li>
+                    </ul>
+                    <!-- Certifications -->
+                    <div class="mt-6 flex items-center gap-4">
+                        <div class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs text-white/60">ISO 9001:2015</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-sm" data-en="© 2024 Golden Vision Company. All rights reserved." data-ar="© ٢٠٢٤ شركة الرؤيا الذهبية. جميع الحقوق محفوظة.">
+                    © 2024 Golden Vision Company. All rights reserved.
+                </p>
+                <div class="flex items-center gap-8">
+                    <a href="#" class="text-white/30 hover:text-white transition-colors text-sm" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a>
+                    <a href="#" class="text-white/30 hover:text-white transition-colors text-sm" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

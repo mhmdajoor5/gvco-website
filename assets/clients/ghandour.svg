@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="ghandourGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B1538;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A61C4A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Ghandour stylized logo - Deep red/maroon brand color -->
+  <text x="100" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="url(#ghandourGrad)" text-anchor="middle" letter-spacing="2">GHANDOUR</text>
+  <path d="M35 48 L165 48" stroke="url(#ghandourGrad)" stroke-width="2" opacity="0.5"/>
+</svg>

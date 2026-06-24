@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="sabicGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066B3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004990;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- SABIC stylized logo - Blue brand color -->
+  <text x="100" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#sabicGrad)" text-anchor="middle" letter-spacing="4">SABIC</text>
+</svg>

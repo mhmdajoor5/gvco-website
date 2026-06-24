@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="pepsiBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#004B93;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066CC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Pepsi stylized logo - Blue/Red -->
+  <circle cx="42" cy="30" r="17" fill="#004B93"/>
+  <path d="M25 30 Q42 20, 59 30" fill="#E31837"/>
+  <path d="M25 30 Q42 40, 59 30" fill="#004B93"/>
+  <circle cx="42" cy="30" r="4" fill="white"/>
+  <text x="125" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="url(#pepsiBlue)" text-anchor="middle" letter-spacing="2">PEPSI</text>
+</svg>
