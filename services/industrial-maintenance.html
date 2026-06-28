@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Maintenance | Golden Vision</title>
+    <meta name="description" content="Industrial maintenance and repair support by Golden Vision Metal Industry Factory.">
+
+    <link rel="icon" type="image/png" href="../asset/golden-vision-metal-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gvco': {
+                            'navy': '#050B15',
+                            'navy-light': '#0D1B2A',
+                            'navy-mid': '#1B2838',
+                            'blue': '#1E4D8C',
+                            'blue-light': '#2E7DD1',
+                            'blue-bright': '#4DA3FF',
+                            'steel': '#4A5568',
+                            'steel-light': '#718096',
+                            'silver': '#C4D0DC',
+                            'chrome': '#E8ECF0',
+                            'gold': '#D4AF37',
+                            'gold-light': '#E8C547',
+                            'gold-dark': '#B8962E',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'arabic': ['Tajawal', 'Cairo', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="../css/styles.css?v=brand-1">
+</head>
+<body class="bg-gvco-navy text-white font-arabic antialiased service-detail-page">
+
+    <div class="loading">
+        <img src="../asset/golden-vision-metal-logo.png" alt="Golden Vision Metal Industry Factory" class="h-16 mb-6 opacity-80">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-[1500px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-[80px]">
+                <a href="../index.html" class="flex items-center group flex-shrink-0">
+                    <img src="../asset/golden-vision-metal-logo.png" alt="Golden Vision Metal Industry Factory Logo" class="h-10 lg:h-11 w-auto transition-opacity duration-300 group-hover:opacity-90">
+                </a>
+
+                <div class="hidden lg:flex items-center gap-12 rtl:flex-row-reverse">
+                    <a href="../index.html#home" class="nav-link-clean" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                    <a href="../index.html#about" class="nav-link-clean" data-en="About" data-ar="عن الشركة">عن الشركة</a>
+                    <a href="../index.html#services" class="nav-link-clean active" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+                    <a href="../index.html#industries" class="nav-link-clean" data-en="Industries" data-ar="القطاعات">القطاعات</a>
+                    <a href="../index.html#gallery" class="nav-link-clean" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                    <a href="../index.html#contact" class="nav-link-clean" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-6 rtl:flex-row-reverse flex-shrink-0">
+                    <button id="langToggle" class="text-[12px] text-white/55 hover:text-white font-semibold tracking-wide transition-colors">English</button>
+                    <span class="w-px h-5 bg-white/20"></span>
+                    <a href="../index.html#contact" class="nav-btn-quote">
+                        <span data-en="Get Quote" data-ar="طلب عرض">طلب عرض</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden text-white/60 hover:text-white p-2 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="lg:hidden hidden bg-gvco-navy/98 backdrop-blur-xl border-t border-white/5">
+            <div class="px-6 py-8 space-y-1">
+                <a href="../index.html#home" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                <a href="../index.html#about" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="About" data-ar="عن الشركة">عن الشركة</a>
+                <a href="../index.html#services" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+                <a href="../index.html#industries" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Industries" data-ar="القطاعات">القطاعات</a>
+                <a href="../index.html#gallery" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                <a href="../index.html#contact" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                <div class="pt-6 border-t border-white/10 mt-4 flex flex-col space-y-4">
+                    <button id="mobileLangToggle" class="text-xs text-white/50">English</button>
+                    <a href="../index.html#contact" class="btn-corporate text-center justify-center">
+                        <span data-en="Request Quote" data-ar="طلب عرض سعر">طلب عرض سعر</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="service-detail-hero">
+            <div class="service-detail-media">
+                <video
+                    class="service-detail-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=85&auto=format&fit=crop"
+                >
+                    <source src="https://videos.pexels.com/video-files/35614237/15092757_2160_3840_30fps.mp4" type="video/mp4">
+                </video>
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=85&auto=format&fit=crop" alt="Industrial maintenance facility">
+            </div>
+            <div class="service-detail-overlay"></div>
+            <div class="service-detail-container">
+                <div class="service-detail-copy" data-aos="fade-up">
+                    <a href="../index.html#services" class="service-breadcrumb" data-en="Services / Industrial Maintenance" data-ar="الخدمات / الصيانة الصناعية">الخدمات / الصيانة الصناعية</a>
+                    <p class="enterprise-label mb-5" data-en="Maintenance Support" data-ar="دعم الصيانة">دعم الصيانة</p>
+                    <h1 data-en="Industrial Maintenance" data-ar="الصيانة الصناعية">الصيانة الصناعية</h1>
+                    <p class="service-detail-lead"
+                       data-en="Preventive and corrective maintenance support for production equipment, conveyors, rotating parts, and industrial systems."
+                       data-ar="دعم صيانة وقائية وتصحيحية لمعدات الإنتاج والناقلات والقطع الدوارة والأنظمة الصناعية.">دعم صيانة وقائية وتصحيحية لمعدات الإنتاج والناقلات والقطع الدوارة والأنظمة الصناعية.</p>
+                    <div class="service-detail-actions">
+                        <a href="../index.html#contact" class="hero-btn-primary">
+                            <span data-en="Request Maintenance Support" data-ar="اطلب دعم صيانة">اطلب دعم صيانة</span>
+                        </a>
+                        <a href="tel:920011054" class="hero-btn-secondary" dir="ltr">920011054</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-section">
+            <div class="service-detail-container">
+                <div class="service-detail-grid">
+                    <div data-aos="fade-up">
+                        <p class="enterprise-label mb-5" data-en="What We Deliver" data-ar="ماذا نقدم">ماذا نقدم</p>
+                        <h2 class="service-detail-heading" data-en="Keep production equipment repairable and reliable." data-ar="حافظ على قابلية إصلاح واعتمادية معدات الإنتاج.">حافظ على قابلية إصلاح واعتمادية معدات الإنتاج.</h2>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100" class="service-detail-richtext">
+                        <p data-en="Golden Vision supports maintenance teams with repair fabrication, replacement parts, machining, welding, and modification work. The service is useful when standard spare parts are delayed or equipment requires custom repair solutions."
+                           data-ar="يدعم مصنع الرؤيا الذهبية فرق الصيانة بتصنيع الإصلاحات وقطع الغيار والتشغيل واللحام وأعمال التعديل. تفيد الخدمة عندما تتأخر قطع الغيار القياسية أو تحتاج المعدات حلول إصلاح خاصة.">يدعم مصنع الرؤيا الذهبية فرق الصيانة بتصنيع الإصلاحات وقطع الغيار والتشغيل واللحام وأعمال التعديل. تفيد الخدمة عندما تتأخر قطع الغيار القياسية أو تحتاج المعدات حلول إصلاح خاصة.</p>
+                        <p data-en="This page is designed to help procurement and engineering teams understand what information is needed before requesting a quote."
+                           data-ar="هذه الصفحة تساعد فرق المشتريات والهندسة على معرفة المعلومات المطلوبة قبل طلب عرض السعر.">هذه الصفحة تساعد فرق المشتريات والهندسة على معرفة المعلومات المطلوبة قبل طلب عرض السعر.</p>
+                    </div>
+                </div>
+
+                <div class="service-capability-grid">
+                    <div class="service-detail-card" data-aos="fade-up">
+                        <span data-en="01" data-ar="01">01</span>
+                        <h3 data-en="Replacement Parts" data-ar="قطع بديلة">قطع بديلة</h3>
+                        <p data-en="Machined or fabricated parts based on drawings, samples, or reverse engineering." data-ar="قطع مشغلة أو مصنعة بناءً على رسومات أو عينات أو هندسة عكسية.">قطع مشغلة أو مصنعة بناءً على رسومات أو عينات أو هندسة عكسية.</p>
+                    </div>
+                    <div class="service-detail-card" data-aos="fade-up" data-aos-delay="80">
+                        <span data-en="02" data-ar="02">02</span>
+                        <h3 data-en="Repair Fabrication" data-ar="تصنيع إصلاحي">تصنيع إصلاحي</h3>
+                        <p data-en="Brackets, guards, frames, shafts, supports, and modified components." data-ar="حوامل وواقيات وهياكل وأعمدة ودعامات ومكونات معدلة.">حوامل وواقيات وهياكل وأعمدة ودعامات ومكونات معدلة.</p>
+                    </div>
+                    <div class="service-detail-card" data-aos="fade-up" data-aos-delay="160">
+                        <span data-en="03" data-ar="03">03</span>
+                        <h3 data-en="Production Support" data-ar="دعم الإنتاج">دعم الإنتاج</h3>
+                        <p data-en="Maintenance work planned around uptime, urgency, and delivery priorities." data-ar="أعمال صيانة تراعي وقت التشغيل والأولوية وسرعة التسليم.">أعمال صيانة تراعي وقت التشغيل والأولوية وسرعة التسليم.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-section service-detail-band">
+            <div class="service-detail-container">
+                <div class="service-detail-split">
+                    <div data-aos="fade-up">
+                        <p class="enterprise-label mb-5" data-en="Typical Applications" data-ar="تطبيقات شائعة">تطبيقات شائعة</p>
+                        <h2 class="service-detail-heading" data-en="Built for real industrial requirements." data-ar="مصممة لمتطلبات صناعية فعلية.">مصممة لمتطلبات صناعية فعلية.</h2>
+                    </div>
+                    <div class="service-list-panel" data-aos="fade-up" data-aos-delay="100">
+                        <div data-en="Conveyor parts" data-ar="قطع ناقلات">قطع ناقلات</div>
+                        <div data-en="Rotating equipment components" data-ar="مكونات معدات دوارة">مكونات معدات دوارة</div>
+                        <div data-en="Machine guards" data-ar="واقيات ماكينات">واقيات ماكينات</div>
+                        <div data-en="Emergency repair parts" data-ar="قطع إصلاح طارئة">قطع إصلاح طارئة</div>
+                        <div data-en="Modified brackets" data-ar="حوامل معدلة">حوامل معدلة</div>
+                        <div data-en="Line maintenance support" data-ar="دعم صيانة خطوط">دعم صيانة خطوط</div>
+                    </div>
+                </div>
+
+                <div class="service-detail-gallery" data-aos="fade-up">
+                    <figure class="is-large">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1000&q=85&auto=format&fit=crop" alt="Industrial maintenance support" loading="lazy">
+                        <figcaption data-en="Industrial maintenance supports" data-ar="دعم الصيانة الصناعية">دعم الصيانة الصناعية</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=700&q=85&auto=format&fit=crop" alt="Replacement part machining" loading="lazy">
+                        <figcaption data-en="Replacement part machinings" data-ar="تشغيل قطع بديلة">تشغيل قطع بديلة</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=85&auto=format&fit=crop" alt="Repair and production review" loading="lazy">
+                        <figcaption data-en="Production Support and production review" data-ar="دعم الإنتاج ومراجعة الإنتاج">دعم الإنتاج ومراجعة الإنتاج</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-section">
+            <div class="service-detail-container">
+                <div class="service-detail-grid">
+                    <div data-aos="fade-up">
+                        <p class="enterprise-label mb-5" data-en="Quote Requirements" data-ar="متطلبات عرض السعر">متطلبات عرض السعر</p>
+                        <h2 class="service-detail-heading" data-en="Send the right details, get a faster response." data-ar="أرسل التفاصيل الصحيحة لتحصل على رد أسرع.">أرسل التفاصيل الصحيحة لتحصل على رد أسرع.</h2>
+                    </div>
+                    <div class="quote-checklist" data-aos="fade-up" data-aos-delay="100">
+                        <div data-en="Part sample, photo, or drawing" data-ar="عينة أو صورة أو رسم للقطعة">عينة أو صورة أو رسم للقطعة</div>
+                        <div data-en="Equipment context and failure description" data-ar="سياق المعدة ووصف العطل">سياق المعدة ووصف العطل</div>
+                        <div data-en="Material or operating conditions" data-ar="المادة أو ظروف التشغيل">المادة أو ظروف التشغيل</div>
+                        <div data-en="Urgency and downtime impact" data-ar="درجة الاستعجال وتأثير التوقف">درجة الاستعجال وتأثير التوقف</div>
+                        <div data-en="Quantity and delivery need" data-ar="الكمية واحتياج التسليم">الكمية واحتياج التسليم</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-cta">
+            <div class="service-detail-container">
+                <div class="service-cta-panel" data-aos="fade-up">
+                    <div>
+                        <p class="enterprise-label mb-4" data-en="Ready to quote?" data-ar="جاهز لطلب عرض؟">جاهز لطلب عرض؟</p>
+                        <h2 data-en="Share your maintenance requirement with Golden Vision." data-ar="شارك احتياج الصيانة مع مصنع الرؤيا الذهبية.">شارك احتياج الصيانة مع مصنع الرؤيا الذهبية.</h2>
+                        <p data-en="Send the drawings, quantities, and requirements so the team can review the request properly."
+                           data-ar="أرسل الرسومات والكميات والمتطلبات ليتمكن الفريق من مراجعة الطلب بشكل صحيح.">أرسل الرسومات والكميات والمتطلبات ليتمكن الفريق من مراجعة الطلب بشكل صحيح.</p>
+                    </div>
+                    <a href="../index.html#contact" class="hero-btn-primary">
+                        <span data-en="Request a Quote" data-ar="طلب عرض سعر">طلب عرض سعر</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gvco-navy-light border-t border-white/5 pt-14 pb-8">
+        <div class="service-detail-container">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="../index.html" class="flex items-center">
+                    <img src="../asset/golden-vision-metal-logo.png" alt="Golden Vision Metal Industry Factory Logo" class="h-12 w-auto">
+                </a>
+                <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+                    <a href="../index.html#services" class="text-white/50 hover:text-white transition-colors" data-en="Services" data-ar="الخدمات">الخدمات</a>
+                    <a href="../index.html#gallery" class="text-white/50 hover:text-white transition-colors" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                    <a href="../index.html#contact" class="text-white/50 hover:text-white transition-colors" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                </div>
+                <p class="text-white/30 text-sm" data-en="Golden Vision Metal Industry Factory" data-ar="مصنع الرؤيا الذهبية للصناعات المعدنية">مصنع الرؤيا الذهبية للصناعات المعدنية</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js?v=brand-1"></script>
+</body>
+</html>

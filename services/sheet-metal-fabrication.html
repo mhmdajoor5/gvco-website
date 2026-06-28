@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet Metal Fabrication | Golden Vision</title>
+    <meta name="description" content="Sheet metal fabrication, bending, and enclosure assembly services by Golden Vision Metal Industry Factory.">
+
+    <link rel="icon" type="image/png" href="../asset/golden-vision-metal-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gvco': {
+                            'navy': '#050B15',
+                            'navy-light': '#0D1B2A',
+                            'navy-mid': '#1B2838',
+                            'blue': '#1E4D8C',
+                            'blue-light': '#2E7DD1',
+                            'blue-bright': '#4DA3FF',
+                            'steel': '#4A5568',
+                            'steel-light': '#718096',
+                            'silver': '#C4D0DC',
+                            'chrome': '#E8ECF0',
+                            'gold': '#D4AF37',
+                            'gold-light': '#E8C547',
+                            'gold-dark': '#B8962E',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'arabic': ['Tajawal', 'Cairo', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="../css/styles.css?v=brand-1">
+</head>
+<body class="bg-gvco-navy text-white font-arabic antialiased service-detail-page">
+
+    <div class="loading">
+        <img src="../asset/golden-vision-metal-logo.png" alt="Golden Vision Metal Industry Factory" class="h-16 mb-6 opacity-80">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-[1500px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-[80px]">
+                <a href="../index.html" class="flex items-center group flex-shrink-0">
+                    <img src="../asset/golden-vision-metal-logo.png" alt="Golden Vision Metal Industry Factory Logo" class="h-10 lg:h-11 w-auto transition-opacity duration-300 group-hover:opacity-90">
+                </a>
+
+                <div class="hidden lg:flex items-center gap-12 rtl:flex-row-reverse">
+                    <a href="../index.html#home" class="nav-link-clean" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                    <a href="../index.html#about" class="nav-link-clean" data-en="About" data-ar="عن الشركة">عن الشركة</a>
+                    <a href="../index.html#services" class="nav-link-clean active" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+                    <a href="../index.html#industries" class="nav-link-clean" data-en="Industries" data-ar="القطاعات">القطاعات</a>
+                    <a href="../index.html#gallery" class="nav-link-clean" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                    <a href="../index.html#contact" class="nav-link-clean" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-6 rtl:flex-row-reverse flex-shrink-0">
+                    <button id="langToggle" class="text-[12px] text-white/55 hover:text-white font-semibold tracking-wide transition-colors">English</button>
+                    <span class="w-px h-5 bg-white/20"></span>
+                    <a href="../index.html#contact" class="nav-btn-quote">
+                        <span data-en="Get Quote" data-ar="طلب عرض">طلب عرض</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden text-white/60 hover:text-white p-2 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="lg:hidden hidden bg-gvco-navy/98 backdrop-blur-xl border-t border-white/5">
+            <div class="px-6 py-8 space-y-1">
+                <a href="../index.html#home" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                <a href="../index.html#about" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="About" data-ar="عن الشركة">عن الشركة</a>
+                <a href="../index.html#services" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+                <a href="../index.html#industries" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Industries" data-ar="القطاعات">القطاعات</a>
+                <a href="../index.html#gallery" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                <a href="../index.html#contact" class="block py-3 text-white/60 hover:text-white text-sm font-medium transition-colors" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                <div class="pt-6 border-t border-white/10 mt-4 flex flex-col space-y-4">
+                    <button id="mobileLangToggle" class="text-xs text-white/50">English</button>
+                    <a href="../index.html#contact" class="btn-corporate text-center justify-center">
+                        <span data-en="Request Quote" data-ar="طلب عرض سعر">طلب عرض سعر</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="service-detail-hero">
+            <div class="service-detail-media">
+                <video
+                    class="service-detail-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1600&q=85&auto=format&fit=crop"
+                >
+                    <source src="https://videos.pexels.com/video-files/35614237/15092757_2160_3840_30fps.mp4" type="video/mp4">
+                </video>
+                <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1600&q=85&auto=format&fit=crop" alt="Sheet metal fabrication facility">
+            </div>
+            <div class="service-detail-overlay"></div>
+            <div class="service-detail-container">
+                <div class="service-detail-copy" data-aos="fade-up">
+                    <a href="../index.html#services" class="service-breadcrumb" data-en="Services / Sheet Metal Fabrication" data-ar="الخدمات / تشكيل الصفائح المعدنية">الخدمات / تشكيل الصفائح المعدنية</a>
+                    <p class="enterprise-label mb-5" data-en="Sheet Metal Solutions" data-ar="حلول الصفائح المعدنية">حلول الصفائح المعدنية</p>
+                    <h1 data-en="Sheet Metal Fabrication" data-ar="تشكيل الصفائح المعدنية">تشكيل الصفائح المعدنية</h1>
+                    <p class="service-detail-lead"
+                       data-en="Complete sheet metal fabrication for panels, enclosures, brackets, guards, and industrial assemblies."
+                       data-ar="حلول صفائح معدنية متكاملة للألواح، الحاويات، الحوامل، الواقيات، والتجميعات الصناعية.">حلول صفائح معدنية متكاملة للألواح، الحاويات، الحوامل، الواقيات، والتجميعات الصناعية.</p>
+                    <div class="service-detail-actions">
+                        <a href="../index.html#contact" class="hero-btn-primary">
+                            <span data-en="Request Sheet Metal Quote" data-ar="اطلب عرض صفائح">اطلب عرض صفائح</span>
+                        </a>
+                        <a href="tel:920011054" class="hero-btn-secondary" dir="ltr">920011054</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-section">
+            <div class="service-detail-container">
+                <div class="service-detail-grid">
+                    <div data-aos="fade-up">
+                        <p class="enterprise-label mb-5" data-en="What We Deliver" data-ar="ماذا نقدم">ماذا نقدم</p>
+                        <h2 class="service-detail-heading" data-en="From flat sheet to finished assembly." data-ar="من الصفيحة الخام إلى التجميع النهائي.">من الصفيحة الخام إلى التجميع النهائي.</h2>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100" class="service-detail-richtext">
+                        <p data-en="Golden Vision supports sheet metal work through cutting, bending, forming, fit-up, welding, and finishing coordination. The service is suited for industrial equipment, control panels, guards, and custom fabricated products."
+                           data-ar="يدعم مصنع الرؤيا الذهبية أعمال الصفائح من القطع والثني والتشكيل والتركيب الأولي واللحام وتنسيق التشطيب. تناسب الخدمة المعدات الصناعية ولوحات التحكم والواقيات والمنتجات المصنعة حسب الطلب.">يدعم مصنع الرؤيا الذهبية أعمال الصفائح من القطع والثني والتشكيل والتركيب الأولي واللحام وتنسيق التشطيب. تناسب الخدمة المعدات الصناعية ولوحات التحكم والواقيات والمنتجات المصنعة حسب الطلب.</p>
+                        <p data-en="This page is designed to help procurement and engineering teams understand what information is needed before requesting a quote."
+                           data-ar="هذه الصفحة تساعد فرق المشتريات والهندسة على معرفة المعلومات المطلوبة قبل طلب عرض السعر.">هذه الصفحة تساعد فرق المشتريات والهندسة على معرفة المعلومات المطلوبة قبل طلب عرض السعر.</p>
+                    </div>
+                </div>
+
+                <div class="service-capability-grid">
+                    <div class="service-detail-card" data-aos="fade-up">
+                        <span data-en="01" data-ar="01">01</span>
+                        <h3 data-en="Bending" data-ar="الثني">الثني</h3>
+                        <p data-en="Controlled CNC bending for repeatable angles and clean sheet metal geometry." data-ar="ثني CNC مضبوط لزوايا متكررة وهندسة صفائح نظيفة.">ثني CNC مضبوط لزوايا متكررة وهندسة صفائح نظيفة.</p>
+                    </div>
+                    <div class="service-detail-card" data-aos="fade-up" data-aos-delay="80">
+                        <span data-en="02" data-ar="02">02</span>
+                        <h3 data-en="Enclosures" data-ar="الحاويات">الحاويات</h3>
+                        <p data-en="Fabrication of cabinets, covers, guards, and panel assemblies." data-ar="تصنيع كبائن وأغطية وواقيات وتجميعات ألواح.">تصنيع كبائن وأغطية وواقيات وتجميعات ألواح.</p>
+                    </div>
+                    <div class="service-detail-card" data-aos="fade-up" data-aos-delay="160">
+                        <span data-en="03" data-ar="03">03</span>
+                        <h3 data-en="Assembly" data-ar="التجميع">التجميع</h3>
+                        <p data-en="Fit-up, welding, fastening, and preparation for coating or installation." data-ar="تركيب أولي، لحام، تثبيت، وتجهيز للطلاء أو التركيب.">تركيب أولي، لحام، تثبيت، وتجهيز للطلاء أو التركيب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-section service-detail-band">
+            <div class="service-detail-container">
+                <div class="service-detail-split">
+                    <div data-aos="fade-up">
+                        <p class="enterprise-label mb-5" data-en="Typical Applications" data-ar="تطبيقات شائعة">تطبيقات شائعة</p>
+                        <h2 class="service-detail-heading" data-en="Built for real industrial requirements." data-ar="مصممة لمتطلبات صناعية فعلية.">مصممة لمتطلبات صناعية فعلية.</h2>
+                    </div>
+                    <div class="service-list-panel" data-aos="fade-up" data-aos-delay="100">
+                        <div data-en="Control cabinets" data-ar="كبائن تحكم">كبائن تحكم</div>
+                        <div data-en="Machine covers" data-ar="أغطية ماكينات">أغطية ماكينات</div>
+                        <div data-en="Protective guards" data-ar="واقيات حماية">واقيات حماية</div>
+                        <div data-en="Mounting brackets" data-ar="حوامل تثبيت">حوامل تثبيت</div>
+                        <div data-en="Equipment panels" data-ar="ألواح معدات">ألواح معدات</div>
+                        <div data-en="Custom enclosures" data-ar="حاويات خاصة">حاويات خاصة</div>
+                    </div>
+                </div>
+
+                <div class="service-detail-gallery" data-aos="fade-up">
+                    <figure class="is-large">
+                        <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1000&q=85&auto=format&fit=crop" alt="Sheet metal fabrication" loading="lazy">
+                        <figcaption data-en="Sheet metal fabrications" data-ar="تصنيع الصفائح المعدنية">تصنيع الصفائح المعدنية</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=700&q=85&auto=format&fit=crop" alt="Precision formed parts" loading="lazy">
+                        <figcaption data-en="Precision formed partss" data-ar="قطع مشكلة بدقة">قطع مشكلة بدقة</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=700&q=85&auto=format&fit=crop" alt="Assembly review" loading="lazy">
+                        <figcaption data-en="Assembly and production review" data-ar="التجميع ومراجعة الإنتاج">التجميع ومراجعة الإنتاج</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-section">
+            <div class="service-detail-container">
+                <div class="service-detail-grid">
+                    <div data-aos="fade-up">
+                        <p class="enterprise-label mb-5" data-en="Quote Requirements" data-ar="متطلبات عرض السعر">متطلبات عرض السعر</p>
+                        <h2 class="service-detail-heading" data-en="Send the right details, get a faster response." data-ar="أرسل التفاصيل الصحيحة لتحصل على رد أسرع.">أرسل التفاصيل الصحيحة لتحصل على رد أسرع.</h2>
+                    </div>
+                    <div class="quote-checklist" data-aos="fade-up" data-aos-delay="100">
+                        <div data-en="Drawings or sample photos" data-ar="رسومات أو صور عينة">رسومات أو صور عينة</div>
+                        <div data-en="Material type and thickness" data-ar="نوع المادة والسماكة">نوع المادة والسماكة</div>
+                        <div data-en="Bending and forming requirements" data-ar="متطلبات الثني والتشكيل">متطلبات الثني والتشكيل</div>
+                        <div data-en="Finish or coating requirement" data-ar="متطلبات التشطيب أو الطلاء">متطلبات التشطيب أو الطلاء</div>
+                        <div data-en="Quantity and delivery schedule" data-ar="الكمية وجدول التسليم">الكمية وجدول التسليم</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail-cta">
+            <div class="service-detail-container">
+                <div class="service-cta-panel" data-aos="fade-up">
+                    <div>
+                        <p class="enterprise-label mb-4" data-en="Ready to quote?" data-ar="جاهز لطلب عرض؟">جاهز لطلب عرض؟</p>
+                        <h2 data-en="Share your sheet metal requirements with Golden Vision." data-ar="شارك متطلبات الصفائح المعدنية مع مصنع الرؤيا الذهبية.">شارك متطلبات الصفائح المعدنية مع مصنع الرؤيا الذهبية.</h2>
+                        <p data-en="Send the drawings, quantities, and requirements so the team can review the request properly."
+                           data-ar="أرسل الرسومات والكميات والمتطلبات ليتمكن الفريق من مراجعة الطلب بشكل صحيح.">أرسل الرسومات والكميات والمتطلبات ليتمكن الفريق من مراجعة الطلب بشكل صحيح.</p>
+                    </div>
+                    <a href="../index.html#contact" class="hero-btn-primary">
+                        <span data-en="Request a Quote" data-ar="طلب عرض سعر">طلب عرض سعر</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gvco-navy-light border-t border-white/5 pt-14 pb-8">
+        <div class="service-detail-container">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="../index.html" class="flex items-center">
+                    <img src="../asset/golden-vision-metal-logo.png" alt="Golden Vision Metal Industry Factory Logo" class="h-12 w-auto">
+                </a>
+                <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+                    <a href="../index.html#services" class="text-white/50 hover:text-white transition-colors" data-en="Services" data-ar="الخدمات">الخدمات</a>
+                    <a href="../index.html#gallery" class="text-white/50 hover:text-white transition-colors" data-en="Facilities" data-ar="المنشآت">المنشآت</a>
+                    <a href="../index.html#contact" class="text-white/50 hover:text-white transition-colors" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                </div>
+                <p class="text-white/30 text-sm" data-en="Golden Vision Metal Industry Factory" data-ar="مصنع الرؤيا الذهبية للصناعات المعدنية">مصنع الرؤيا الذهبية للصناعات المعدنية</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js?v=brand-1"></script>
+</body>
+</html>
